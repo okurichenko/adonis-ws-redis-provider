@@ -4,6 +4,11 @@ This project provides listener and publisher for Redis PubSub in terms of adonis
 
 ## Installation
 
+Install addon via:
+```bash
+adonis install adonis-ws-redis-provider
+```
+
 Add provider to `start/app.js`:
 
 ```js

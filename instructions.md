@@ -15,8 +15,8 @@ The next step is to open `server.js` and register preloader for redis subscripti
 ```js
 new Ignitor(Fold)
   .appRoot(__dirname)
-  .preLoad('start/redis')
-  .wsServer() // <-- add this line
+  .preLoad('start/wsRedis') // <-- add this line
+  .wsServer()
   .fireHttpServer()
   .catch(console.error)
 ```
