@@ -12,6 +12,17 @@ const providers = [
 ]
 ```
 
+The next step is to open `server.js` and register preloader for redis subscriptions.
+
+```js
+new Ignitor(Fold)
+  .appRoot(__dirname)
+  .preLoad('start/redis')
+  .wsServer() // <-- add this line
+  .fireHttpServer()
+  .catch(console.error)
+```
+
 Don't forget that this package relies on [adonis-websocket](https://github.com/adonisjs/adonis-websocket) and [adonis-redis](https://github.com/adonisjs/adonis-redis).
 
 ## How to use

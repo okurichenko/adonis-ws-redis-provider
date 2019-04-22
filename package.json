@@ -1,6 +1,6 @@
 {
   "name": "adonis-ws-redis-provider",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Provider for redis pubsub used for websockets",
   "main": "index.js",
   "scripts": {
@@ -8,6 +8,12 @@
     "pretest": "npm run lint",
     "test": "japa"
   },
+  "files": [
+    "config",
+    "providers",
+    "instructions.js",
+    "instructions.md"
+  ],
   "keywords": [
     "adonisjs",
     "adonis-framework",
@@ -22,5 +28,6 @@
     "japa": "^1.0.5",
     "japa-cli": "^1.0.1",
     "standard": "^10.0.3"
-  }
+  },
+  "dependencies": {}
 }
